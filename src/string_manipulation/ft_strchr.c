@@ -12,14 +12,14 @@ char *ft_strchr(const char *hrt, int c)
   // after the loop the code is at \0.
   // it checks one last time: did the user want \0?
   if ((unsigned char)c == '\0')
-    return((char *)hrt);
+    return((char *)hrt); // returns this nice pointer
 
   return (NULL);
 }
 
-#include <stdio.h>
-int main(void)
-{
-  printf ("%s \n", ft_strchr("hello I like 42", 'I') );
-  return(0);
-}
+// #include <stdio.h>
+// int main(void)
+// {
+//   printf ("%s \n", ft_strchr("hello I like 42", 'I') );
+//   return(0);
+// }
